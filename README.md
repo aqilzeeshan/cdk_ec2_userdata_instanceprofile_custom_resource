@@ -1,14 +1,4 @@
-# Welcome to your CDK TypeScript project!
-
-This is a blank project for TypeScript development with CDK.
-
-The `cdk.json` file tells the CDK Toolkit how to execute your app.
-
-## Useful commands
-
- * `npm run build`   compile typescript to js
- * `npm run watch`   watch for changes and compile
- * `npm run test`    perform the jest unit tests
- * `cdk deploy`      deploy this stack to your default AWS account/region
- * `cdk diff`        compare deployed stack with current state
- * `cdk synth`       emits the synthesized CloudFormation template
+* This is try out of https://gist.github.com/sebsto/ebb66807ac8c6f9148c7580e2da5803d
+* It shows how to creation abstraction using `Resource`. Class for EC2 is created which is passed everything including userdata when instantiated from Stack. Shows how to create your own resources if CDK doesn't have it.
+* Uses InstanceProfile to pass role to EC2.
+* Shows how to run userdata. Installs SSM Agent and nginx then turns these services on.
